@@ -26,8 +26,8 @@ services:
     volumes:
       - build_react:/var/www/html
 
-  nginx:
-    container_name: nginx
+  nginx_sorteio_feliz:
+    container_name: nginx_sorteio_feliz
     build: ./nginx
     ports:
       - 80:80
