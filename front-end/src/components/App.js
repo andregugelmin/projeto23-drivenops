@@ -9,8 +9,6 @@ import RandomStudent from "./RandomStudent";
 
 export default function App() {
 
-  console.log('test!');
-
   return <BrowserRouter>
       <Routes>
           <Route path="/" element={<RandomStudent />} />
