@@ -1,6 +1,6 @@
 services:
   db_sorteio_feliz:
-    image: postgres:13
+    image: postgres
     container_name: db_sorteio_feliz
     restart: always 
     ports:
@@ -30,7 +30,7 @@ services:
     container_name: nginx_sorteio_feliz
     build: ./nginx
     ports:
-      - 80:80
+      - 8080:80
     volumes:
       - build_react:/var/www/html
     depends_on:

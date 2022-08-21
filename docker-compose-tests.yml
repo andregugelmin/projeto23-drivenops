@@ -1,6 +1,6 @@
 services:
   db_sorteio_feliz:
-    image: postgres:13
+    image: postgres
     container_name: db_sorteio_feliz
     restart: always 
     ports:
